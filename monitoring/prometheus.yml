@@ -1,0 +1,62 @@
+# =============================================================================
+# prometheus.yml
+# Konfigurasi utama Prometheus untuk monitoring TF Serving
+# mushroom_model yang sudah di-deploy ke Railway.
+#
+# Prometheus akan scrape metrics dari endpoint:
+#   http://<RAILWAY_URL>/monitoring/prometheus/metrics
+# =============================================================================
+
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+  scrape_timeout: 10s
+  external_labels:
+    monitor: 'mushroom-model-monitor'
+    project: 'yogidharma-pipeline'
+
+# ── Alerting (opsional, bisa dikosongkan) ─────────────────────────────────────
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets: []
+
+# ── Rules (opsional) ──────────────────────────────────────────────────────────
+rule_files: []
+
+# ── Scrape Jobs ───────────────────────────────────────────────────────────────
+scrape_configs:
+
+  # Job 1: Monitoring Prometheus itu sendiri
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']
+        labels:
+          service: 'prometheus'
+
+  # Job 2: TF Serving mushroom_model — endpoint Railway
+  # Ganti <YOUR_RAILWAY_URL> dengan domain Railway Anda setelah deploy
+  # Contoh: mushroom-serving-production.up.railway.app
+  - job_name: 'tf_serving_mushroom_model'
+    scrape_interval: 30s
+    metrics_path: '/monitoring/prometheus/metrics'
+    scheme: 'https'
+    static_configs:
+      - targets: ['<YOUR_RAILWAY_URL>']
+        labels:
+          model: 'mushroom_model'
+          version: '1'
+          environment: 'production'
+          project: 'yogidharma-pipeline'
+
+  # Job 3: TF Serving lokal (untuk testing di localhost)
+  - job_name: 'tf_serving_local'
+    scrape_interval: 15s
+    metrics_path: '/monitoring/prometheus/metrics'
+    scheme: 'http'
+    static_configs:
+      - targets: ['host.docker.internal:8501']
+        labels:
+          model: 'mushroom_model'
+          version: '1'
+          environment: 'local'

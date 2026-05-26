@@ -1,0 +1,510 @@
+feature {
+  name: "bruises"
+  type: BYTES
+  domain: "bruises"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "cap-color"
+  type: BYTES
+  domain: "cap-color"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "cap-shape"
+  type: BYTES
+  domain: "cap-shape"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "cap-surface"
+  type: BYTES
+  domain: "cap-surface"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "class"
+  type: BYTES
+  domain: "class"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "gill-attachment"
+  type: BYTES
+  domain: "gill-attachment"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "gill-color"
+  type: BYTES
+  domain: "gill-color"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "gill-size"
+  type: BYTES
+  domain: "gill-size"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "gill-spacing"
+  type: BYTES
+  domain: "gill-spacing"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "habitat"
+  type: BYTES
+  domain: "habitat"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "odor"
+  type: BYTES
+  domain: "odor"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "population"
+  type: BYTES
+  domain: "population"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "ring-number"
+  type: BYTES
+  domain: "ring-number"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "ring-type"
+  type: BYTES
+  domain: "ring-type"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "spore-print-color"
+  type: BYTES
+  domain: "spore-print-color"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "stalk-color-above-ring"
+  type: BYTES
+  domain: "stalk-color-above-ring"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "stalk-color-below-ring"
+  type: BYTES
+  domain: "stalk-color-below-ring"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "stalk-root"
+  type: BYTES
+  domain: "stalk-root"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "stalk-shape"
+  type: BYTES
+  domain: "stalk-shape"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "stalk-surface-above-ring"
+  type: BYTES
+  domain: "stalk-surface-above-ring"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "stalk-surface-below-ring"
+  type: BYTES
+  domain: "stalk-surface-below-ring"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "veil-color"
+  type: BYTES
+  domain: "veil-color"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+feature {
+  name: "veil-type"
+  type: BYTES
+  domain: "veil-type"
+  presence {
+    min_fraction: 1.0
+    min_count: 1
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+}
+string_domain {
+  name: "bruises"
+  value: "f"
+  value: "t"
+}
+string_domain {
+  name: "cap-color"
+  value: "b"
+  value: "c"
+  value: "e"
+  value: "g"
+  value: "n"
+  value: "p"
+  value: "r"
+  value: "u"
+  value: "w"
+  value: "y"
+}
+string_domain {
+  name: "cap-shape"
+  value: "b"
+  value: "c"
+  value: "f"
+  value: "k"
+  value: "s"
+  value: "x"
+}
+string_domain {
+  name: "cap-surface"
+  value: "f"
+  value: "g"
+  value: "s"
+  value: "y"
+}
+string_domain {
+  name: "class"
+  value: "e"
+  value: "p"
+}
+string_domain {
+  name: "gill-attachment"
+  value: "a"
+  value: "f"
+}
+string_domain {
+  name: "gill-color"
+  value: "b"
+  value: "e"
+  value: "g"
+  value: "h"
+  value: "k"
+  value: "n"
+  value: "o"
+  value: "p"
+  value: "r"
+  value: "u"
+  value: "w"
+  value: "y"
+}
+string_domain {
+  name: "gill-size"
+  value: "b"
+  value: "n"
+}
+string_domain {
+  name: "gill-spacing"
+  value: "c"
+  value: "w"
+}
+string_domain {
+  name: "habitat"
+  value: "d"
+  value: "g"
+  value: "l"
+  value: "m"
+  value: "p"
+  value: "u"
+  value: "w"
+}
+string_domain {
+  name: "odor"
+  value: "a"
+  value: "c"
+  value: "f"
+  value: "l"
+  value: "m"
+  value: "n"
+  value: "p"
+  value: "s"
+  value: "y"
+}
+string_domain {
+  name: "population"
+  value: "a"
+  value: "c"
+  value: "n"
+  value: "s"
+  value: "v"
+  value: "y"
+}
+string_domain {
+  name: "ring-number"
+  value: "n"
+  value: "o"
+  value: "t"
+}
+string_domain {
+  name: "ring-type"
+  value: "e"
+  value: "f"
+  value: "l"
+  value: "n"
+  value: "p"
+}
+string_domain {
+  name: "spore-print-color"
+  value: "b"
+  value: "h"
+  value: "k"
+  value: "n"
+  value: "o"
+  value: "r"
+  value: "u"
+  value: "w"
+  value: "y"
+}
+string_domain {
+  name: "stalk-color-above-ring"
+  value: "b"
+  value: "c"
+  value: "e"
+  value: "g"
+  value: "n"
+  value: "o"
+  value: "p"
+  value: "w"
+  value: "y"
+}
+string_domain {
+  name: "stalk-color-below-ring"
+  value: "b"
+  value: "c"
+  value: "e"
+  value: "g"
+  value: "n"
+  value: "o"
+  value: "p"
+  value: "w"
+  value: "y"
+}
+string_domain {
+  name: "stalk-root"
+  value: "?"
+  value: "b"
+  value: "c"
+  value: "e"
+  value: "r"
+}
+string_domain {
+  name: "stalk-shape"
+  value: "e"
+  value: "t"
+}
+string_domain {
+  name: "stalk-surface-above-ring"
+  value: "f"
+  value: "k"
+  value: "s"
+  value: "y"
+}
+string_domain {
+  name: "stalk-surface-below-ring"
+  value: "f"
+  value: "k"
+  value: "s"
+  value: "y"
+}
+string_domain {
+  name: "veil-color"
+  value: "n"
+  value: "o"
+  value: "w"
+  value: "y"
+}
+string_domain {
+  name: "veil-type"
+  value: "p"
+}
